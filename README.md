@@ -1,6 +1,8 @@
-## Sistem Registrasi Pelayanan Rawat Jalan
+# Sistem Registrasi Pelayanan Rawat Jalan
 
-Aplikasi ini adalah sistem manajemen data pasien, dokter, layanan, asuransi, dan perusahaan untuk kebutuhan registrasi rawat jalan berbasis web.
+Aplikasi ini adalah sistem manajemen data **pasien, dokter, layanan, asuransi, dan perusahaan** untuk kebutuhan registrasi rawat jalan berbasis web.
+
+---
 
 ## Tech Stack
 
@@ -13,42 +15,87 @@ Aplikasi ini adalah sistem manajemen data pasien, dokter, layanan, asuransi, dan
 
 ## Struktur Project
 
+```txt
 registrasi-pelayanan-rawat-jalan/
 │
 ├── backend/
-│ ├── models/
-│ ├── controllers/
-│ ├── routes/
-│ ├── config/
-│ └── seed/
-| └── index.js
+│   ├── models/
+│   ├── controllers/
+│   ├── routes/
+│   ├── config/
+│   ├── seed/
+│   └── index.js
 │
 ├── frontend/
-│ ├── src/
-│ │ ├── pages/
-│ │ ├── api/
-│ │ └── components/
-│ └── App.jsx
+│   ├── src/
+│   │   ├── pages/
+│   │   ├── api/
+│   │   └── components/
+│   └── App.jsx
+```
 
-## API Endpoint
+---
 
-- /pasien
-- /dokter
-- /layanan
-- /master-asuransi
-- /master-perusahaan
+## 🔌 API Endpoint
 
-GET, POST, PUT, DELETE
+### Master Data
 
-## Setup Backend
+- `/pasien`
+- `/dokter`
+- `/layanan`
+- `/master-asuransi`
+- `/master-perusahaan`
 
-- cd backend
-- npm install
-- setup database di config/Database.js
-- node index
+### Method
+
+- GET → Ambil data
+- POST → Tambah data
+- PUT → Update data
+- DELETE → Hapus data
+
+---
+
+## ⚙️ Setup Backend
+
+```bash
+cd backend
+npm install
+```
+
+### Konfigurasi Database
+
+Edit file:
+
+```
+backend/config/Database.js
+```
+
+### Jalankan Server
+
+```bash
+node index.js
+```
+
+Server berjalan di:
+
+```
+http://localhost:5004
+```
+
+---
 
 ## Setup Frontend
 
-- cd frontend
-- npm install
-- npm run dev
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Frontend berjalan di:
+
+```
+http://localhost:5173
+```
+
+---
